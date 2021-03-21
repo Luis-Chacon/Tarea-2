@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>
+        Tarea #2 Mi pagina de Pokemon
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" > <!--Link de boostrap-->
+    <link rel="stylesheet" href="Prueba.css" > 
+
+</head>
+
+
+<body style="background-color: black;">      <!--  -color:rgba(202, 148, 13, 0.89); background="https://pokegens.com/wp-content/uploads/2020/08/PDEX-1.png" -->
+    <img style="display: block; margin: 0 auto;" src="https://www.logolynx.com/images/logolynx/43/43393e02bc1e150a5aca9649bc3a7489.png"   width="500" height="250">
+
+        <div style="text-align: center;">
+            <button id="buttonBuscar" onclick="search()" class="btn btn-success">Buscar Total de Pokemons</button>
+        </div>
+
+    <div class="container">
+        <div class="col-6" id="results" >  <!--style="background-color:rgb(240, 228, 58);"-->
+        </div>
+
+    <div class="row">    
+        
+        <div class="col-3" id="img"></div>    <!--style="background-color:rgb(109, 152, 231);" -->
+        <div class="col-4" id="aspectos">  
+        </div> 
+        
+    </div>
+        <br><br><br>
+        <div style="text-align: center;">
+            <button  style="display:none;" id="buttonPokemons"  onclick="search_2()"   class="btn btn-success">Buscar Pokemons</button>
+        </div>
+
+        <div style="text-align: right;" id="footerPage">
+            <button style="display:none;" id="buttonBack" onclick="back()" class="btn btn-success"><-</button>
+            <button style="display:none;" id="buttonNext" onclick="next()" class="btn btn-success">-></button>
+        </div>
+
+    </div>
+
+
+    <script src="JavaScritp.js"></script>
+</body>
+
+</html>
