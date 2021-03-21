@@ -5,6 +5,7 @@ var currentApiURL="";
 var currentApiURL_2= [ ];
 var htmlStyle = "";
 var bandera= false;
+var x=true;
 
 function search()
 {
@@ -57,7 +58,7 @@ function showApiPoke(data)
     var element = document.getElementById("results");
     var countingHtml = document.createElement("h4");
     countingHtml.style.color = "white";
-    if(data.previous == null)
+    if(x)
     {
         countingHtml.innerHTML = "Total de Pokemons:" + data.count;
     }
@@ -114,6 +115,7 @@ function showApiPoke(data)
     }
 
     document.getElementById("buttonBuscar").style.display = "none";
+    x=0;
 }
 
 function showApiAtributos(data1)
